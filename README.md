@@ -25,4 +25,8 @@ docker-compose up -d --build
 
 > Note that the assumption is that you already have docker installed and running on your computer
 
-Now that you've built the containers, you're ready to start making requests on [http://localhost:5173/](http://localhost:5173/)
+Now that you've built the containers, you can access:
+
+-   [Frontend](http://localhost:5173/)
+-   [Backend](http://localhost:8000/)
+-   [Demo email server](http://localhost:8001/)
