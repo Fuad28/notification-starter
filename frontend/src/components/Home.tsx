@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Box, Heading, Button, Text, HStack, Image } from "@chakra-ui/react";
 import homeImage from "../assets/home.jpeg";
+import token from "../token";
 
 const Home = () => {
 	const [countdown, setCountdown] = useState(0);
@@ -13,13 +14,12 @@ const Home = () => {
 	}, [countdown]);
 
 	const handleClick = async () => {
-		// Simulate an API request
 		await fetch("https://jsonplaceholder.typicode.com/posts", {
-			// "https://localhost:8000/trigger"
+			//http://localhost:8000/api/trigger/
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
-				Authorization: "...",
+				Authorization: `Bearer ${token}`,
 			},
 		});
 
