@@ -14,7 +14,8 @@ const Home = () => {
 
 	const handleClick = async () => {
 		// Simulate an API request
-		await fetch("https://localhost:8000/trigger", {
+		await fetch("https://jsonplaceholder.typicode.com/posts", {
+			// "https://localhost:8000/trigger"
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
@@ -24,7 +25,7 @@ const Home = () => {
 
 		setCountdown(5);
 	};
-
+	console.log("HEREEEE", countdown);
 	return (
 		<Box p={4}>
 			<Heading>Home Page</Heading>
