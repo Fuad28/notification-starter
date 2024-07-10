@@ -25,7 +25,7 @@ const Home = () => {
 
 		setCountdown(5);
 	};
-	console.log("HEREEEE", countdown);
+
 	return (
 		<Box p={4}>
 			<Heading>Home Page</Heading>
